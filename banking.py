@@ -5,7 +5,6 @@ import sqlite3
 conn = sqlite3.connect('card.s3db')
 c = conn.cursor()
 c.execute("""CREATE TABLE IF NOT EXISTS card (
-                id INTEGER PRIMARY KEY AUTOINCREMENT,
                 number TEXT NOT NULL,
                 pin TEXT NOT NULL,
                 balance INTEGER DEFAULT 0 NOT NULL
