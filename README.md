@@ -8,6 +8,6 @@ Python program simulating a simple banking system with management of accounts an
 
 ![](demo.gif)
 
-Following the above operation, this is how the back-end database looks like:
+After the operations above, the database will look like:
 
 ![](SQL.png)
