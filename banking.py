@@ -1,6 +1,5 @@
 import random
 import sqlite3
-# random.seed(random)
 
 conn = sqlite3.connect('card.s3db')
 c = conn.cursor()
@@ -26,7 +25,6 @@ class Card:
         card_list = list(str(self.card_n))
         del card_list[-1]
         total = 0
-#       i = None
         for i in range(15):
             if i % 2 == 0:
                 card_list[i] = str(int(card_list[i]) * 2)
